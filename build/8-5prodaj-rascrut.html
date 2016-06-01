@@ -1,0 +1,968 @@
+<!doctype html>
+<html>
+<head>
+	<title>8-1prodaji-razdel</title>
+	<meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<meta name="viewport" content="width=1200">
+	<meta name="format-detection" content="telephone=no">
+	<!-- theme color for android 5.0 -->
+	<meta name="theme-color" content="#fff">
+	<link rel="stylesheet" media="all" href="css/lib/uikit.css" >
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- header -->
+	<header class="header">
+		<div class="header__left">
+			<button class="btm-menu" type="button"><span class="ico"></span>Весь сайт</button>
+		</div>
+		<!-- logo -->
+		<a href="#" class="logo"></a>
+		<!-- search -->
+		<div class="search">
+			<button class="search__btn" type="button"><span></span></button>
+		</div>
+		<!-- menu -->
+		<ul class="menu">
+			<li class="menu__item"><a href="#">Компания</a></li>
+			<li class="menu__item is-active">
+				<a href="#">Продажи</a>
+				<div class="menu__in">
+					<!-- cabinet -->
+					<a href="#" class="cabinet">
+						<div class="cabinet__name"></div>
+						<div class="cabinet__row">
+							<i class="ico ico_user"></i>
+							<span>Личный кабинет</span>
+						</div>
+					</a>
+					<!-- ul -->
+					<ul class="ul">
+						<li><a class="is-active" href="#">Каталог</a></li>
+						<li><a href="#">Акции и спецпредложения</a></li>
+						<li><a href="#">Где купить продукцию ЕКТ</a></li>
+						<li><a href="#">Проектировщику</a></li>
+						<li><a href="#">Сервисный центр</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu__item"><a href="#">Контакты</a></li>
+		</ul>
+		<!-- basket -->
+		<button class="basket" type="button">
+			<i class="ico ico_basket"></i>
+			<span>Заказ</span>
+		</button>
+	</header>
+	<div class="l-layout">
+		<!-- sidebar -->
+		<div class="sidebar">
+			<div class="page-name">
+				<span>Каталог</span>
+				<button class="btn-search" type="button"><span></span></button>
+			</div>
+			<!-- nav -->
+			<ul class="nav">
+				<li class="nav__item">
+					<div class="nav__wrap js-nav-item">
+						<a href="#">Крепёжная техника</a>
+						<span class="nav__arr"></span>
+					</div>
+					<!-- list-links -->
+					<ul class="list-links js-list-links">
+						<li><a href="#">Сварочное оборудование и материалы</a></li>
+						<li><a href="#">Компрессоры, пневмоинструмент и оснастка</a></li>
+						<li><a href="#">Генераторы</a></li>
+						<li><a href="#">Пуско-зарядные устройства</a></li>
+						<li><a href="#">Нагреватели воздуха</a></li>
+						<li><a href="#">Измерительные приборы</a></li>
+						<li><a href="#">Мотопомпы</a></li>
+						<li><a href="#">Бетоносмесители</a></li>
+						<li><a href="#">Лестницы</a></li>
+						<li><a href="#">Тачки</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<div class="nav__wrap js-nav-item">
+						<a href="#">Ручной инструмент</a>
+						<span class="nav__arr"></span>
+					</div>
+					<!-- list-links -->
+					<ul class="list-links js-list-links">
+						<li><a href="#">Сварочное оборудование и материалы</a></li>
+						<li><a href="#">Компрессоры, пневмоинструмент и оснастка</a></li>
+						<li><a href="#">Генераторы</a></li>
+						<li><a href="#">Пуско-зарядные устройства</a></li>
+						<li><a href="#">Нагреватели воздуха</a></li>
+						<li><a href="#">Измерительные приборы</a></li>
+						<li><a href="#">Мотопомпы</a></li>
+						<li><a href="#">Бетоносмесители</a></li>
+						<li><a href="#">Лестницы</a></li>
+						<li><a href="#">Тачки</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<div class="nav__wrap js-nav-item">
+						<a href="#">Электроинструмент и оснастка</a>
+						<span class="nav__arr"></span>
+					</div>
+					<!-- list-links -->
+					<ul class="list-links js-list-links">
+						<li><a href="#">Сварочное оборудование и материалы</a></li>
+						<li><a href="#">Компрессоры, пневмоинструмент и оснастка</a></li>
+						<li><a href="#">Генераторы</a></li>
+						<li><a href="#">Пуско-зарядные устройства</a></li>
+						<li><a href="#">Нагреватели воздуха</a></li>
+						<li><a href="#">Измерительные приборы</a></li>
+						<li><a href="#">Мотопомпы</a></li>
+						<li><a href="#">Бетоносмесители</a></li>
+						<li><a href="#">Лестницы</a></li>
+						<li><a href="#">Тачки</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<div class="nav__wrap js-nav-item">
+						<a href="#">Бензоинструмент и оснастка</a>
+						<span class="nav__arr"></span>
+					</div>
+					<!-- list-links -->
+					<ul class="list-links js-list-links">
+						<li><a href="#">Сварочное оборудование и материалы</a></li>
+						<li><a href="#">Компрессоры, пневмоинструмент и оснастка</a></li>
+						<li><a href="#">Генераторы</a></li>
+						<li><a href="#">Пуско-зарядные устройства</a></li>
+						<li><a href="#">Нагреватели воздуха</a></li>
+						<li><a href="#">Измерительные приборы</a></li>
+						<li><a href="#">Мотопомпы</a></li>
+						<li><a href="#">Бетоносмесители</a></li>
+						<li><a href="#">Лестницы</a></li>
+						<li><a href="#">Тачки</a></li>
+					</ul>
+				</li>
+				<li class="nav__item is-active">
+					<div class="nav__wrap js-nav-item">
+						<a href="#">Оборудование для промышленности и строительства</a>
+						<div class="nav__block">
+							<span class="nav__arr"></span>
+							<!-- ul-o -->
+							<ul class="ul-o">
+								<li>
+									<a href="#">Сварочное оборудование и материалы</a>
+									<!-- ul-t -->
+									<ul class="ul-t">
+										<li>
+											<a href="#">Оборудование для сварки и резки Mma, Tig, Mig, Plasma Cut</a>
+											<!-- ul-th -->
+											<ul class="ul-th">
+												<li>
+													<a href="#">Ручная дуговая сварка (MMA)</a>
+												</li>
+												<li>
+													<a href="#">Маски Сварщика</a>
+												</li>
+												<li>
+													<a href="#">Аксессуары для оборудования сварки и резки</a>
+													<!-- ul-f -->
+													<ul class="ul-f">
+														<li>
+															<a href="#">Коннекторы кабельные</a>
+															<!-- ul-fa -->
+															<ul class="ul-fi">
+																<li><a href="#">Гнездо соединительное, для сварочных кабелей Kirk</a></li>
+																<li><a href="#">Коннектор для сварочных кабелей Kirk</a></li>
+																<li><a href="#">Гнездо для панели сварочного аппарата Kirk</a></li>
+															</ul>
+														</li>
+														<li><a href="#">Клеммы заземления</a></li>
+														<li><a href="#">Держатели электрода Mma Kirk</a></li>
+														<li><a href="#">Горелка сварочная Tig wp17 - 150a Kirk</a></li>
+														<li><a href="#">Горелка сварочная Tig wp26 - 250a Kirk</a></li>
+														<li><a href="#">Горелка сварочная Tig wp18 - 350a Kirk</a></li>
+														<li><a href="#">Горелка сварочная Mig mb 15ak - 180a Kirk</a></li>
+														<li><a href="#">Горелка сварочная Mig mb 24kd - 250a Kirk</a></li>
+														<li><a href="#">Горелка сварочная Mig mb 25ak - 230a Kirk</a></li>
+														<li><a href="#">Горелка сварочная Mig mb 36kd - 300a Kirk</a></li>
+														<li><a href="#">Горелка сварочная Mig mb 501d - 500a Kirk</a></li>
+														<li><a href="#">Плазмотрон plasma cut pt31 Kirk</a></li>
+														<li><a href="#">Плазмотрон plasma cut p80 Kirk</a></li>
+														<li><a href="#">Плазмотрон plasma cut a141 Kirk</a></li>
+														<li><a href="#">Плазмотрон plasma cut 150a Kirk</a></li>
+														<li><a href="#">Кабель сварочный медный</a></li>
+														<li><a href="#">Наконечники контактные для сварочных горелок Mig/Mag</a></li>
+														<li><a href="#">Держатель контактного наконечника для горелки Mig/Mag</a></li>
+														<li><a href="#">Каналы подающие для сварочной проволоки (для Mig/Mag горелок)</a></li>
+														<li><a href="#">Циркульное устройство для плазмотрона сb150/a-141 cv0022 Trafimet</a></li>
+														<li><a href="#">Шланг газовый/воздушный Kirk</a></li>
+														<li><a href="#">Регулятор давления saw2000-02 Kirk</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">Полуавтоматическая сварка</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Сварочные материалы</a>
+										</li>
+										<li>
+											<a href="#">Маски мварщика</a>
+										</li>
+										<li>
+											<a href="#">Аксессуары для оборудования сварки и резки</a>
+										</li>
+										<li>
+											<a href="#">Краги сварщика</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Компрессоры, пневмоинструмент и оснастка</a>
+								</li>
+								<li>
+									<a href="#">Генераторы</a>
+								</li>
+								<li>
+									<a href="#">Пуско-зарядные устройства</a>
+								</li>
+								<li>
+									<a href="#">Нагреватели воздуха</a>
+								</li>
+								<li>
+									<a href="#">Измерительные приборы</a>
+								</li>
+								<li>
+									<a href="#">Мотопомпы</a>
+								</li>
+								<li>
+									<a href="#">Бетоносмесители</a>
+								</li>
+								<li>
+									<a href="#">Лестницы</a>
+								</li>
+								<li>
+									<a href="#">Тачки</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- list-links -->
+					<ul class="list-links js-list-links">
+						<li class="is-active">
+							<a href="#">Сварочное оборудование и материалы</a>
+							<ul>
+								<li class="is-active">
+									<a href="#">Оборудование для сварки и резки Mma, Tig, Mig, Plasma Cut</a>
+									<ul>
+										<li><a href="#" class="is-active">Ручная дуговая сварка (MMA)</a></li>
+										<li><a href="#">Маски Сварщика</a></li>
+										<li><a href="#">Аксессуары для оборудования сварки и резки</a></li>
+										<li><a href="#">Полуавтоматическая сварка</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Сварочные Материалы</a></li>
+								<li><a href="#">Маски Сварщика</a></li>
+								<li><a href="#">Аксессуары для оборудования сварки и резки</a></li>
+								<li><a href="#">Краги сварщика</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Компрессоры, пневмоинструмент и оснастка</a></li>
+						<li><a href="#">Генераторы</a></li>
+						<li><a href="#">Пуско-зарядные устройства</a></li>
+						<li><a href="#">Нагреватели воздуха</a></li>
+						<li><a href="#">Измерительные приборы</a></li>
+						<li><a href="#">Мотопомпы</a></li>
+						<li><a href="#">Бетоносмесители</a></li>
+						<li><a href="#">Лестницы</a></li>
+						<li><a href="#">Тачки</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<div class="nav__wrap js-nav-item">
+						<a href="#">Средства индивидуальной <br>защиты</a>
+						<span class="nav__arr"></span>
+					</div>
+					<!-- list-links -->
+					<ul class="list-links js-list-links">
+						<li><a href="#">Сварочное оборудование и материалы</a></li>
+						<li><a href="#">Компрессоры, пневмоинструмент и оснастка</a></li>
+						<li><a href="#">Генераторы</a></li>
+						<li><a href="#">Пуско-зарядные устройства</a></li>
+						<li><a href="#">Нагреватели воздуха</a></li>
+						<li><a href="#">Измерительные приборы</a></li>
+						<li><a href="#">Мотопомпы</a></li>
+						<li><a href="#">Бетоносмесители</a></li>
+						<li><a href="#">Лестницы</a></li>
+						<li><a href="#">Тачки</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<div class="nav__wrap js-nav-item">
+						<a href="#">Блистерная программа</a>
+						<span class="nav__arr"></span>
+					</div>
+					<!-- list-links -->
+					<ul class="list-links js-list-links">
+						<li><a href="#">Сварочное оборудование и материалы</a></li>
+						<li><a href="#">Компрессоры, пневмоинструмент и оснастка</a></li>
+						<li><a href="#">Генераторы</a></li>
+						<li><a href="#">Пуско-зарядные устройства</a></li>
+						<li><a href="#">Нагреватели воздуха</a></li>
+						<li><a href="#">Измерительные приборы</a></li>
+						<li><a href="#">Мотопомпы</a></li>
+						<li><a href="#">Бетоносмесители</a></li>
+						<li><a href="#">Лестницы</a></li>
+						<li><a href="#">Тачки</a></li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<div class="nav__wrap js-nav-item">
+						<a href="#">Торговое оборудование</a>
+						<span class="nav__arr"></span>
+					</div>
+					<!-- list-links -->
+					<ul class="list-links js-list-links">
+						<li><a href="#">Сварочное оборудование и материалы</a></li>
+						<li><a href="#">Компрессоры, пневмоинструмент и оснастка</a></li>
+						<li><a href="#">Генераторы</a></li>
+						<li><a href="#">Пуско-зарядные устройства</a></li>
+						<li><a href="#">Нагреватели воздуха</a></li>
+						<li><a href="#">Измерительные приборы</a></li>
+						<li><a href="#">Мотопомпы</a></li>
+						<li><a href="#">Бетоносмесители</a></li>
+						<li><a href="#">Лестницы</a></li>
+						<li><a href="#">Тачки</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="main__in">
+				<!-- topic -->
+				<div class="topic" style="background-image: url(img/topic-bg-razdel-1.jpg);">
+					<div class="topic__in">
+						<!-- breadcrumbs -->
+						<ul class="breadcrumbs">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Оборудование для промышленности и строительства</a></li>
+							<li><a href="#">Сварочное оборудование и материалы</a></li>
+							<li>Оборудование для сварки и резки Мма, Tig, Mig, Plasma Cut</li>
+						</ul>
+						<div class="topic__wrap">
+							<!-- drop -->
+							<div class="drop js-drop">
+								<button class="btn btn_share js-open-drop" type="button"></i>Поделиться</button>
+								<ul class="drop__list js-drop-list">
+									<li><a href="#"><i class="ico ico_f"></i>Facebook</a></li>
+									<li><a href="#"><i class="ico ico_vk"></i>Vkontakte</a></li>
+									<li><a href="#"><i class="ico ico_tw"></i>Twitter</a></li>
+									<li><a href="#"><i class="ico ico_m"></i>E-mail</a></li>
+								</ul>
+							</div>
+							<div class="topic__title">Ручная дуговая сварка (ММА)</div>
+						</div>
+						<div class="topic__text">Товаров с подробными описаниями и фотографиями от 66 производителей с ценами магазинов. Для выбора и покупки свародного оборудования.</div>
+					</div>
+				</div>
+				<!-- wrapper -->
+				<div class="wrapper">
+					<!-- filter -->
+					<form class="filter">
+						<div class="filter__row">
+							<div class="filter__left">
+								<span class="filter__text">Бренды:</span>
+								<select class="multiple-select js-multiple-select" multiple="multiple" data-placeholder="Бренд">
+									<option value="Станки">Станки</option>
+									<option value="Оборудование">Оборудование</option>
+									<option value="Машины">Машины</option>
+									<option value="Инструменты">Инструменты</option>
+								</select>
+							</div>
+							<div class="filter__right">
+								<label class="checkbox">
+									<input type="checkbox" class="js-open-all-items">
+									<span>Показать описание</span>
+								</label>
+								<ul class="view">
+									<li class="view__item">
+										<a href="#">
+											<i class="icon">
+												<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+												    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+												        <g id="ico-table" sketch:type="MSLayerGroup" fill="#FFFFFF">
+												            <g id="Shape" sketch:type="MSShapeGroup">
+												                <path d="M15,7 L15,9 L13,9 L13,7 L15,7 L15,7 Z M16,6 L12,6 L12,10 L16,10 L16,6 Z M15,1 L15,3 L13,3 L13,1 L15,1 Z M16,0 L12,0 L12,4 L16,4 L16,0 Z M9,1 L9,3 L7,3 L7,1 L9,1 Z M10,0 L6,0 L6,4 L10,4 L10,0 Z M3,1 L3,3 L1,3 L1,1 L3,1 Z M4,0 L0,0 L0,4 L4,4 L4,0 Z M9,7 L9,9 L7,9 L7,7 L9,7 Z M10,6 L6,6 L6,10 L10,10 L10,6 Z M3,7 L3,9 L1,9 L1,7 L3,7 Z M4,6 L0,6 L0,10 L4,10 L4,6 Z M15,13 L15,15 L13,15 L13,13 L15,13 Z M16,12 L12,12 L12,16 L16,16 L16,12 Z M9,13 L9,15 L7,15 L7,13 L9,13 Z M10,12 L6,12 L6,16 L10,16 L10,12 Z M3,13 L3,15 L1,15 L1,13 L3,13 Z M4,12 L0,12 L0,16 L4,16 L4,12 L4,12 Z"></path>
+												            </g>
+												        </g>
+												    </g>
+												</svg>
+											</i>
+										</a>
+									</li>
+									<li class="view__item is-active">
+										<a href="#">
+											<i class="icon">
+												<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+												    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+												        <g id="ico-list-img" sketch:type="MSLayerGroup" fill="#C5C5C5">
+												            <path d="M3,1 L3,3 L1,3 L1,1 L3,1 L3,1 Z M4,0 L0,0 L0,4 L4,4 L4,0 Z M6,8 L16,8 L16,9 L6,9 L6,8 Z M6,2 L16,2 L16,3 L6,3 L6,2 Z M6,14 L16,14 L16,15 L6,15 L6,14 Z M3,7 L3,9 L1,9 L1,7 L3,7 Z M4,6 L0,6 L0,10 L4,10 L4,6 Z M3,13 L3,15 L1,15 L1,13 L3,13 Z M4,12 L0,12 L0,16 L4,16 L4,12 L4,12 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+												        </g>
+												    </g>
+												</svg>
+											</i>
+										</a>
+									</li>
+									<li class="view__item">
+										<a href="#">
+											<i class="icon">
+												<svg width="10px" height="13px" viewBox="0 0 10 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+												    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+												        <g id="ico-list" sketch:type="MSLayerGroup" fill="#C5C5C5">
+												            <path d="M0,6 L10,6 L10,7 L0,7 L0,6 Z M0,0 L10,0 L10,1 L0,1 L0,0 Z M0,3 L10,3 L10,4 L0,4 L0,3 Z M0,9 L10,9 L10,10 L0,10 L0,9 Z M0,12 L10,12 L10,13 L0,13 L0,12 Z" id="Rectangle-path" sketch:type="MSShapeGroup"></path>
+												        </g>
+												    </g>
+												</svg>
+											</i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="filter__block js-filter-block">
+							<div class="filter__col">
+								<!-- accord -->
+								<div class="accord js-accord is-active">
+									<div class="accord__but js-accord-but">
+										<div class="accord__title">Стоимость</div>
+									</div>
+									<div class="accord__block js-accord-block">
+										<div class="form-item">
+											<input type="text" class="input" value="400 000">
+											<input type="text" class="input" value="80 000 000">
+										</div>
+										<span>бел.руб</span>
+									</div>
+								</div>
+								<!-- accord -->
+								<div class="accord js-accord is-active">
+									<div class="accord__but js-accord-but">
+										<div class="accord__title">Диаметр электрода (мин)</div>
+									</div>
+									<div class="accord__block js-accord-block">
+										<div class="form-item">
+											<select class="multiple-select js-filter-select" multiple="multiple">
+												<option value="">от</option>
+												<option value="1">1</option>
+												<option value="2" selected>2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+											<select class="multiple-select js-filter-select" multiple="multiple">
+												<option value="" selected>до</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+										</div>
+										<span>мм</span>
+									</div>
+								</div>
+								<!-- accord -->
+								<div class="accord js-accord">
+									<div class="accord__but js-accord-but">
+										<div class="accord__title">Диаметр электрода (макс)</div>
+									</div>
+									<div class="accord__block js-accord-block">
+										<div class="form-item">
+											<select class="multiple-select js-filter-select" multiple="multiple" data-placeholder="от">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+											<select class="multiple-select js-filter-select" data-placeholder="до" multiple="multiple">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+										</div>
+										<span>мм</span>
+									</div>
+								</div>
+								<!-- accord -->
+								<div class="accord js-accord is-active">
+									<div class="accord__but js-accord-but">
+										<div class="accord__title">Класс изоляции</div>
+									</div>
+									<div class="accord__block js-accord-block">
+										<select class="multiple-select js-filter-select" multiple="multiple">
+											<option value="" selected>Все классы</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+									</div>
+								</div>
+								<!-- accord -->
+								<div class="accord js-accord">
+									<div class="accord__but js-accord-but">
+										<div class="accord__title">Тип</div>
+									</div>
+									<div class="accord__block js-accord-block">
+										<select class="multiple-select js-filter-select" multiple="multiple">
+											<option value="" selected>Все классы</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+									</div>
+								</div>
+								<!-- accord -->
+								<div class="accord js-accord">
+									<div class="accord__but js-accord-but">
+										<div class="accord__title">Вес</div>
+									</div>
+									<div class="accord__block js-accord-block">
+										<select class="multiple-select js-filter-select" multiple="multiple">
+											<option value="" selected>Все классы</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="filter__col">
+								<!-- accord -->
+								<div class="accord js-accord is-active">
+									<div class="accord__but js-accord-but">
+										<div class="accord__title">Минимальный выходной ток</div>
+									</div>
+									<div class="accord__block js-accord-block">
+										<select class="multiple-select js-filter-select" multiple="multiple">
+											<option value="" selected>Все классы</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+									</div>
+								</div>
+								<!-- accord -->
+								<div class="accord js-accord">
+									<div class="accord__but js-accord-but">
+										<div class="accord__title">Максимальный выходной ток</div>
+									</div>
+									<div class="accord__block js-accord-block">
+										<div class="form-item">
+											<select class="multiple-select js-filter-select" multiple="multiple" data-placeholder="от">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+											<select class="multiple-select js-filter-select" data-placeholder="до" multiple="multiple">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+										</div>
+										<span>A</span>
+									</div>
+								</div>
+								<!-- accord -->
+								<div class="accord js-accord">
+									<div class="accord__but js-accord-but">
+										<div class="accord__title">Напряжение холостого хода</div>
+									</div>
+									<div class="accord__block js-accord-block">
+										<select class="multiple-select js-filter-select" multiple="multiple">
+											<option value="" selected>Все классы</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+									</div>
+								</div>
+								<label class="checkbox">
+									<input type="checkbox" checked>
+									<span>Наличие осушителя</span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Только товары на акции</span>
+								</label>
+							</div>
+							<div class="filter__buttons">
+								<button class="btn" type="submit">Подобрать</button>
+								<button class="btn-clear" type="button"><span>Сбросить фильтр</span></button>
+							</div>
+						</div>
+						<div class="filter__bot">
+							<button class="filter__all js-filter-all" type="button">Показать все фильтры</button>
+						</div>
+					</form>
+					<div class="title-h2">Ручная дуговая сварка покрытым электродом</div>
+					<!-- sorting -->
+					<div class="sorting js-sorting">
+						<button class="sorting__item is-active js-sortin-item" type="button">По умолчанию</button>
+						<button class="sorting__item js-sortin-item" type="button">Стоимость</button>
+						<button class="sorting__item js-sortin-item" type="button">Название</button>
+						<button class="sorting__item js-sortin-item" type="button">Артикул</button>
+					</div>
+					<!-- items --> 
+					<div class="items js-items">
+						<!-- point -->
+						<div class="point js-item">
+							<div class="point__right">
+								<div class="spiner js-spiner" data-max-number="10">
+									<button class="spiner__minus js-minus">–</button>
+									<input type="text" class="spiner__input" name="spiner-input" value="1" readonly="">
+									<div class="spiner__block">
+										<div class="spiner__text">
+											<p>Кол-во метров</p>
+											<p>Кратность: 12</p>
+										</div>
+									</div>
+									<button class="spiner__plus js-plus">+</button>
+									<button class="btn btn_basket" type="button"><i class="ico ico_basket-w"></i></button>
+								</div>
+							</div>
+							<div class="point__left">
+								<a href="#" class="point__img">
+									<div class="badge badge_red">Акция</div>
+									<img src="img/point-img-1.jpg" alt="img">
+								</a>
+								<div class="point__info">
+									<a href="#" class="link-green">Инвертор сварочный MMA130A, ПВ20%, кейс, 220В, IGBT, EW2800 HITACHI</a>
+									<div class="article">Артикул: 20455555</div>
+									<div class="point__text js-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, omnis repellat facilis. Necessitatibus ratione amet dolore voluptates ullam illo rerum.</div>
+								</div>
+							</div>
+							<a href="#" class="point__arr js-item-open"></a>
+						</div>
+						<!-- point -->
+						<div class="point js-item">
+							<div class="point__right">
+								<div class="spiner js-spiner" data-max-number="10">
+									<button class="spiner__minus js-minus">–</button>
+									<input type="text" class="spiner__input" name="spiner-input" value="1" readonly="">
+									<div class="spiner__block">
+										<div class="spiner__text">
+											<p>Кол-во метров</p>
+											<p>Кратность: 12</p>
+										</div>
+									</div>
+									<button class="spiner__plus js-plus">+</button>
+									<button class="btn btn_basket" type="button"><i class="ico ico_basket-w"></i></button>
+								</div>
+							</div>
+							<div class="point__left">
+								<a href="#" class="point__img"><img src="img/point-img-2.jpg" alt="img"></a>
+								<div class="point__info">
+									<a href="#" class="link-green">Инвертор сварочный TIG200DC HF/MMA160A, ПВ35%, газ.клапан, э/держатель, горелка TIG, 220В IGBT KIRK (шт)</a>
+									<div class="article">Артикул: 245577</div>
+									<div class="point__text js-item-text">Сварочный инвертор. Ручной дуговой (MMA) тип сварки. Макс. сварочный ток: 160 А (MMA)</div>
+								</div>
+							</div>
+							<a href="#" class="point__arr js-item-open"></a>
+						</div>
+						<!-- point -->
+						<div class="point js-item">
+							<div class="point__right">
+								<div class="spiner js-spiner" data-max-number="10">
+									<button class="spiner__minus js-minus">–</button>
+									<input type="text" class="spiner__input" name="spiner-input" value="1" readonly="">
+									<div class="spiner__block">
+										<div class="spiner__text">
+											<p>Кол-во метров</p>
+											<p>Кратность: 12</p>
+										</div>
+									</div>
+									<button class="spiner__plus js-plus">+</button>
+									<button class="btn btn_basket" type="button"><i class="ico ico_basket-w"></i></button>
+								</div>
+							</div>
+							<div class="point__left">
+								<a href="#" class="point__img">
+									<div class="badge badge_red">Акция</div>
+									<img src="img/point-img-1.jpg" alt="img">
+								</a>
+								<div class="point__info">
+									<a href="#" class="link-green">Инвертор сварочный MMA130A, ПВ20%, кейс, 220В, IGBT, EW2800 HITACHI</a>
+									<div class="article">Артикул: 20455555</div>
+									<div class="point__text js-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, omnis repellat facilis. Necessitatibus ratione amet dolore voluptates ullam illo rerum.</div>
+								</div>
+							</div>
+							<a href="#" class="point__arr js-item-open"></a>
+						</div>
+						<!-- point -->
+						<div class="point js-item">
+							<div class="point__right">
+								<div class="spiner js-spiner" data-max-number="10">
+									<button class="spiner__minus js-minus">–</button>
+									<input type="text" class="spiner__input" name="spiner-input" value="1" readonly="">
+									<div class="spiner__block">
+										<div class="spiner__text">
+											<p>Кол-во метров</p>
+											<p>Кратность: 12</p>
+										</div>
+									</div>
+									<button class="spiner__plus js-plus">+</button>
+									<button class="btn btn_basket" type="button"><i class="ico ico_basket-w"></i></button>
+								</div>
+							</div>
+							<div class="point__left">
+								<a href="#" class="point__img"><img src="img/point-img-2.jpg" alt="img"></a>
+								<div class="point__info">
+									<a href="#" class="link-green">Инвертор сварочный TIG200DC HF/MMA160A, ПВ35%, газ.клапан, э/держатель, горелка TIG, 220В IGBT KIRK (шт)</a>
+									<div class="article">Артикул: 245577</div>
+									<div class="point__text js-item-text">Сварочный инвертор. Ручной дуговой (MMA) тип сварки. Макс. сварочный ток: 160 А (MMA)</div>
+								</div>
+							</div>
+							<a href="#" class="point__arr js-item-open"></a>
+						</div>
+						<!-- point -->
+						<div class="point js-item">
+							<div class="point__right">
+								<div class="spiner js-spiner" data-max-number="10">
+									<button class="spiner__minus js-minus">–</button>
+									<input type="text" class="spiner__input" name="spiner-input" value="1" readonly="">
+									<div class="spiner__block">
+										<div class="spiner__text">
+											<p>Кол-во метров</p>
+											<p>Кратность: 12</p>
+										</div>
+									</div>
+									<button class="spiner__plus js-plus">+</button>
+									<button class="btn btn_basket" type="button"><i class="ico ico_basket-w"></i></button>
+								</div>
+							</div>
+							<div class="point__left">
+								<a href="#" class="point__img">
+									<div class="badge badge_red">Акция</div>
+									<img src="img/point-img-1.jpg" alt="img">
+								</a>
+								<div class="point__info">
+									<a href="#" class="link-green">Инвертор сварочный MMA130A, ПВ20%, кейс, 220В, IGBT, EW2800 HITACHI</a>
+									<div class="article">Артикул: 20455555</div>
+									<div class="point__text js-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, omnis repellat facilis. Necessitatibus ratione amet dolore voluptates ullam illo rerum.</div>
+								</div>
+							</div>
+							<a href="#" class="point__arr js-item-open"></a>
+						</div>
+						<!-- point -->
+						<div class="point js-item">
+							<div class="point__right">
+								<div class="spiner js-spiner" data-max-number="10">
+									<button class="spiner__minus js-minus">–</button>
+									<input type="text" class="spiner__input" name="spiner-input" value="1" readonly="">
+									<div class="spiner__block">
+										<div class="spiner__text">
+											<p>Кол-во метров</p>
+											<p>Кратность: 12</p>
+										</div>
+									</div>
+									<button class="spiner__plus js-plus">+</button>
+									<button class="btn btn_basket" type="button"><i class="ico ico_basket-w"></i></button>
+								</div>
+							</div>
+							<div class="point__left">
+								<a href="#" class="point__img"><img src="img/point-img-2.jpg" alt="img"></a>
+								<div class="point__info">
+									<a href="#" class="link-green">Инвертор сварочный TIG200DC HF/MMA160A, ПВ35%, газ.клапан, э/держатель, горелка TIG, 220В IGBT KIRK (шт)</a>
+									<div class="article">Артикул: 245577</div>
+									<div class="point__text js-item-text">Сварочный инвертор. Ручной дуговой (MMA) тип сварки. Макс. сварочный ток: 160 А (MMA)</div>
+								</div>
+							</div>
+							<a href="#" class="point__arr js-item-open"></a>
+						</div>
+						<!-- point -->
+						<div class="point js-item">
+							<div class="point__right">
+								<div class="spiner js-spiner" data-max-number="10">
+									<button class="spiner__minus js-minus">–</button>
+									<input type="text" class="spiner__input" name="spiner-input" value="1" readonly="">
+									<div class="spiner__block">
+										<div class="spiner__text">
+											<p>Кол-во метров</p>
+											<p>Кратность: 12</p>
+										</div>
+									</div>
+									<button class="spiner__plus js-plus">+</button>
+									<button class="btn btn_basket" type="button"><i class="ico ico_basket-w"></i></button>
+								</div>
+							</div>
+							<div class="point__left">
+								<a href="#" class="point__img">
+									<div class="badge badge_red">Акция</div>
+									<img src="img/point-img-1.jpg" alt="img">
+								</a>
+								<div class="point__info">
+									<a href="#" class="link-green">Инвертор сварочный MMA130A, ПВ20%, кейс, 220В, IGBT, EW2800 HITACHI</a>
+									<div class="article">Артикул: 20455555</div>
+									<div class="point__text js-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, omnis repellat facilis. Necessitatibus ratione amet dolore voluptates ullam illo rerum.</div>
+								</div>
+							</div>
+							<a href="#" class="point__arr js-item-open"></a>
+						</div>
+						<!-- point -->
+						<div class="point js-item">
+							<div class="point__right">
+								<div class="spiner js-spiner" data-max-number="10">
+									<button class="spiner__minus js-minus">–</button>
+									<input type="text" class="spiner__input" name="spiner-input" value="1" readonly="">
+									<div class="spiner__block">
+										<div class="spiner__text">
+											<p>Кол-во метров</p>
+											<p>Кратность: 12</p>
+										</div>
+									</div>
+									<button class="spiner__plus js-plus">+</button>
+									<button class="btn btn_basket" type="button"><i class="ico ico_basket-w"></i></button>
+								</div>
+							</div>
+							<div class="point__left">
+								<a href="#" class="point__img"><img src="img/point-img-2.jpg" alt="img"></a>
+								<div class="point__info">
+									<a href="#" class="link-green">Инвертор сварочный TIG200DC HF/MMA160A, ПВ35%, газ.клапан, э/держатель, горелка TIG, 220В IGBT KIRK (шт)</a>
+									<div class="article">Артикул: 245577</div>
+									<div class="point__text js-item-text">Сварочный инвертор. Ручной дуговой (MMA) тип сварки. Макс. сварочный ток: 160 А (MMA)</div>
+								</div>
+							</div>
+							<a href="#" class="point__arr js-item-open"></a>
+						</div>
+						<!-- point -->
+						<div class="point js-item">
+							<div class="point__right">
+								<div class="spiner js-spiner" data-max-number="10">
+									<button class="spiner__minus js-minus">–</button>
+									<input type="text" class="spiner__input" name="spiner-input" value="1" readonly="">
+									<div class="spiner__block">
+										<div class="spiner__text">
+											<p>Кол-во метров</p>
+											<p>Кратность: 12</p>
+										</div>
+									</div>
+									<button class="spiner__plus js-plus">+</button>
+									<button class="btn btn_basket" type="button"><i class="ico ico_basket-w"></i></button>
+								</div>
+							</div>
+							<div class="point__left">
+								<a href="#" class="point__img">
+									<div class="badge badge_red">Акция</div>
+									<img src="img/point-img-1.jpg" alt="img">
+								</a>
+								<div class="point__info">
+									<a href="#" class="link-green">Инвертор сварочный MMA130A, ПВ20%, кейс, 220В, IGBT, EW2800 HITACHI</a>
+									<div class="article">Артикул: 20455555</div>
+									<div class="point__text js-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, omnis repellat facilis. Necessitatibus ratione amet dolore voluptates ullam illo rerum.</div>
+								</div>
+							</div>
+							<a href="#" class="point__arr js-item-open"></a>
+						</div>
+						<!-- point -->
+						<div class="point js-item">
+							<div class="point__right">
+								<div class="spiner js-spiner" data-max-number="10">
+									<button class="spiner__minus js-minus">–</button>
+									<input type="text" class="spiner__input" name="spiner-input" value="1" readonly="">
+									<div class="spiner__block">
+										<div class="spiner__text">
+											<p>Кол-во метров</p>
+											<p>Кратность: 12</p>
+										</div>
+									</div>
+									<button class="spiner__plus js-plus">+</button>
+									<button class="btn btn_basket" type="button"><i class="ico ico_basket-w"></i></button>
+								</div>
+							</div>
+							<div class="point__left">
+								<a href="#" class="point__img"><img src="img/point-img-2.jpg" alt="img"></a>
+								<div class="point__info">
+									<a href="#" class="link-green">Инвертор сварочный TIG200DC HF/MMA160A, ПВ35%, газ.клапан, э/держатель, горелка TIG, 220В IGBT KIRK (шт)</a>
+									<div class="article">Артикул: 245577</div>
+									<div class="point__text js-item-text">Сварочный инвертор. Ручной дуговой (MMA) тип сварки. Макс. сварочный ток: 160 А (MMA)</div>
+								</div>
+							</div>
+							<a href="#" class="point__arr js-item-open"></a>
+						</div>
+					</div>
+					<!-- pagination -->
+					<ul class="pagin">
+						<li class="pagin__item"><a href="#"><i>&#8249;</i> Назад</a></li>
+						<li class="pagin__item"><a href="#">1</a></li>
+						<li class="pagin__item"><a href="#" class="is-active">2</a></li>
+						<li class="pagin__item"><a href="#">3</a></li>
+						<li class="pagin__item"><span>...</span></li>
+						<li class="pagin__item"><a href="#">24</a></li>
+						<li class="pagin__item"><a href="#">Вперед <i>&#8250;</i></a></li>
+					</ul>
+					<div class="title-h2">Преимущества работы с нами</div>
+					<!-- advantages -->
+					<div class="advantages">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="advantages__item">
+									<h3 class="title-green">Качество</h3>
+									<p>Рынок, который традиционно был устойчив к изменениям, начал демонстрировать стремительные витки роста. </p>
+								</div>
+								<div class="advantages__item">
+									<h3 class="title-green">Поставки</h3>
+									<p>Количество компаний в отрасли стало увеличиваться в прогрессии.</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="advantages__item">
+									<h3 class="title-green">Долговечность</h3>
+									<p>В этот период, строительный рынок Беларуси рос экспоненциальными темпами. </p>
+								</div>
+								<div class="advantages__item">
+									<h3 class="title-green">Стоимость</h3>
+									<p>Рынок, который традиционно был устойчив к изменениям.</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="advantages__item">
+									<h3 class="title-green">Долговечность</h3>
+									<p>Количество компаний в отрасли стало увеличиваться в прогрессии.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- read-more -->
+				<a href="#" class="read-more" style="background-image: url(img/read-more-img-1.png);">
+					<div class="read-more__in">
+						<div class="read-more__text">Читать далее:</div><span class="link-right">Акции и спецпредложения</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END out-->
+<footer class="footer">
+	<div class="footer__in">
+		<!-- copy -->
+		<div class="copy">&copy; 2015 ЗАО "ЕКТ групп"</div>
+		<div class="footer__info"><span>+375 (17) 269-74-74,</span> <a href="mailto:info@ekt.by">info@ekt.by</a></div>
+		<!-- dev -->
+		<div class="dev"><span>Разработка сайта:</span> <a href="#">Flex Media</a></div>
+	</div>
+</footer>
+<!-- load scripts -->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+pre {
+    background-color: #f5f5f5;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0 0 10px;
+    padding: 9.5px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+code, pre {
+    border-radius: 3px;
+    color: #333;
+    font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+    font-size: 12px;
+    padding: 0 3px 2px;
+}
+.hidden_protection {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none !important;
+    box-shadow: none !important;
+    color: transparent !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+}
+/*[id^="bx_incl_area"] {display:inline-block;}*/
+.bx-context-toolbar-empty-area{min-width:12px;}
+.bx-core-window .section{display:table-row;}
+.read-more.single {
+    margin: 0;
+    width: 100%;
+}
+.read-more-wrap .read-more + .read-more {
+    margin-left: 50%;
+    margin-top: 0;
+}
+.pagin .pagin__item.is-inactive{display:none;}
+.menu__item.is-active.nmrgn{margin-bottom:0;}
+.tab .tab__cont {
+    width: 100%;
+}
+.ul .cabinet{width: 143px;}
+.point .point__img img {
+    max-width: 90px;
+}
+.item .item__img img {
+    max-width: 200px;
+}
+a.sorting__item.js-sortin-item {
+    color: #000;
+    padding: 6px 23px 6px 7px;
+}
+a.basket{color:#000;}
+.items.is-prod .item{
+    padding-bottom: 30px;
+}
+.btn.btn_small.added {
+    min-width: 148px !important;
+}
+.btn.btn_small.added.in-list{
+    margin: 24px 0 0 18px;
+}
+.btn.btn_small.added.in-text{
+    margin: 4px 0 0 18px;
+}
+
+.ajax-cart__area .products .js-scroll {
+	position: relative;
+}
+.ajax-cart__area .products .js-scroll::after {
+	content: '';
+	right: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(255,255,255,.7);
+	position: absolute;
+	z-index: 5;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity 0.1s linear, visibility 0.1s linear;
+	-moz-transition: opacity 0.1s linear, visibility 0.1s linear;
+	-o-transition: opacity 0.1s linear, visibility 0.1s linear;
+	transition: opacity 0.1s linear, visibility 0.1s linear;
+}
+.ajax-cart__area .products .js-scroll.is-load::after {
+	opacity: 1;
+	visibility: visible;
+}
