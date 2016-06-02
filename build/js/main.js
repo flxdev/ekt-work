@@ -15445,4 +15445,149 @@ $(document).ready( function() {
 		});
 	});
 
+	(function(){
+		var table_area = $('.js-scrolling__area'),
+			scroller = table_area.find('.product-table-scroller__content'),
+			table = table_area.find('.product-table').width(),
+			container = table_area.find('.product__container-table'),
+			tableScroll = table_area.find('#product-table'),
+			hidden = table_area.find('.product-table-bar__scroll');
+
+		// scroller.css('width', table - 291);
+		if(container.hasClass('product__container-full')) {
+			scroller.css('width', table);
+		} else {
+			scroller.css('width', table - 291);
+		}
+
+		if(table <= table_area.width()) {
+			$('.product-table-scroller').addClass('product-table-scroller_hidden')
+		} else {
+			$('.product-table-scroller').removeClass('product-table-scroller_hidden');
+		}
+
+		scroller.parent().on('scroll', function(e){
+			container.add(hidden).scrollLeft($(e.target).scrollLeft());
+		});
+		tableScroll.parent().on('scroll', function(e){
+			scroller.parent().add(hidden).scrollLeft($(e.target).scrollLeft());
+		});
+
+		$('.product-table__cell_fake').each(function(){
+			var _ = $(this),
+				parent = _.parent(),
+				pH = parent.height();
+
+			_.css('height', pH);
+		});
+
+		$(document).scroll(function() { 
+			var scroll 		= $(this).scrollTop();
+			if ($('#js-sheet').length) {
+				$('#js-sheet').each(function () {
+					var this_ 		= $(this),
+						head 		= this_.find('.product__container-bar'),
+						headHeight = head.innerHeight(),
+						footer = this_.find('.product-table-scroller'),
+						headPos 	= this_.offset(),
+						footerPos = this_.offset(),
+						widthSheet 	= this_.width(),
+						heightSheet = this_.height(),
+						point 		= headPos.top + (heightSheet - 278),
+						pointScroller = headPos.top + heightSheet;
+
+					if (scroll >= headPos.top) {
+						head.addClass('is-fixed');
+						head.width(widthSheet);
+						if(scroll >= point) {
+							head.addClass('is-opacity');
+						}
+						else {
+							head.removeClass('is-opacity');
+						}
+					}
+					else {
+						head.removeClass('is-fixed');
+					}
+
+
+					if(scroll + $(window).height() >= headPos.top + headHeight) {
+						footer.addClass('is-fixed');
+						footer.width(widthSheet);
+						if(container.hasClass('product__container-full')) {
+							footer.width(widthSheet);
+						} else {
+							footer.width(widthSheet-291);
+						}
+						if(scroll + $(window).height() >= pointScroller) {
+							footer.addClass('is-absolute');
+						}
+						else {
+							footer.removeClass('is-absolute');
+						}
+					} else {
+						footer.removeClass('is-fixed');
+					}
+
+				});
+			};  
+		});
+		$(window).resize(function() {
+			if ($('#js-sheet').length) {
+				$('#js-sheet').each(function () {
+					var this_ 		= $(this),
+						head 		= this_.find('.product__container-bar'),
+						footer = this_.find('.product-table-scroller')
+						widthSheet 	= this_.width();
+						head.width(widthSheet);
+						if(container.hasClass('product__container-full')) {
+							footer.width(widthSheet);
+						} else {
+							footer.width(widthSheet-291);
+						}
+				});
+			};
+			
+
+			if(table <= table_area.width()) {
+				$('.product-table-scroller').addClass('product-table-scroller_hidden');
+			} else {
+				$('.product-table-scroller').removeClass('product-table-scroller_hidden');
+			}
+		});
+
+	})();
+
+	//add basket
+
+	function added() {
+		var spin = $('.spinner__state');
+
+		spin.each(function(){
+			var _ = $(this),
+				btnAdd = '<button class="btn btn_small"><i class="ico ico_add"></i>Добавлено</button>',
+				btnCount = '<button class="btn btn_small">12 упаковок</button>',
+				btn = _.find('.btn_basket'),
+				row = _.parents('.product-table__row');
+
+				if(_.hasClass('add') && _.hasClass('count')) {
+					row.addClass('is-added');
+					_.empty().append(btnCount);
+				} else if(_.hasClass('add')) {
+					row.addClass('is-added');
+					_.empty().append(btnAdd);
+				}
+
+				btn.on('click', function(){
+					row.addClass('is-added');
+					_.empty().append(btnAdd).addClass('add');
+					setTimeout(function(){
+						_.empty().append(btnCount).addClass('count');
+					},2000);
+				});
+
+		});
+	};
+	added();
+
 });
