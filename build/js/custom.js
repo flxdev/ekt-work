@@ -684,4 +684,34 @@ $(document).ready( function() {
 		});
 	}
 	history_accord();
+
+
+	function tech(){
+		if($('.tech').length){
+			$('.tech-item').fancybox({
+				padding		: 30,
+				openEffect  : 'fade',
+				closeEffect : 'fade',
+				maxWidth	: 800,
+				nextEffect  : 'fade',
+				prevEffect  : 'fade',
+				beforeShow: function () {
+					setTimeout(function(){
+						$('.fancybox-wrap').addClass('is-active');
+					}, 1);
+					$('.fancybox-overlay, .fancybox-close').bind("click", function (e) {
+						$('.fancybox-wrap').removeClass('is-active');
+					});
+					$('.fancybox-wrap').bind('click', function(event) {
+						event.stopPropagation();
+					});
+				},
+				onClosed: function() {
+					$('.fancybox-wrap').removeClass('is-active');
+				}
+			})
+		}
+	};
+	tech();
+
 });

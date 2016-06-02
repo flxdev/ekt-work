@@ -1143,3 +1143,24 @@ img {
     border: 1px solid;
     margin-top: 22px;
 }
+
+.tech {
+    font-size: 0;
+    margin-left: -30px;
+}
+.tech-item {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-left: 30px;
+}
+.tech-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
