@@ -79,6 +79,7 @@ img.slick-loading{
 .topic {
 	height: 392px;
 	background-color: #fff;
+	margin: 45px 45px 0 44px;
 }
 .topic.inner {
 	height: auto;
@@ -123,7 +124,7 @@ img.slick-loading{
 	overflow: hidden;
 }
 .topic__category-item {
-	height: 130px;
+	height: 196px;
 	background-color: #ede;
 	overflow: hidden;
 }
@@ -150,6 +151,7 @@ img.slick-loading{
 }
 .topic__category-item:not(:last-child) {
 	margin-bottom: 1px;
+	height: 195px;
 }
 @media screen and (max-width: 1180px) {
 	.topic__category {
@@ -205,4 +207,7 @@ img.slick-loading{
 	max-height: 100%;
 	max-width: 100%;
 	display: inline-block;
+}
+.promo + .promo {
+	margin-top: 30px;
 }

@@ -15589,5 +15589,11 @@ $(document).ready( function() {
 		});
 	};
 	added();
+	$('.topic__gallery-inner').slick({
+		arrows: false,
+		dots: true,
+		autoplaySpeed: 4000,
+		autoplay: true
+	});
 
 });
