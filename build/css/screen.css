@@ -191,7 +191,92 @@ img.slick-loading{
 
 
 
-
+.ico_pdf::before {
+    background-image: url("../img/icons/pdf-x2.png");
+    background-position: 0 0;
+    background-size: cover;
+}
+.ico_pdf::after {
+    background-image: url("../img/icons/pdf-x2-hover.png");
+    background-position: 0 0;
+    background-size: cover;
+}
+.ico_jpg::before, .ico_jpeg::before {
+    background-image: url("../img/icons/jpg-x2.png");
+    background-position: 0 0;
+    background-size: cover;
+}
+.ico_jpg::after, .ico_jpeg::after {
+    background-image: url("../img/icons/jpg-x2-hover.png");
+    background-position: 0 0;
+    background-size: cover;
+}
+.ico_doc::before, .ico_docx::before {
+    background-image: url("../img/icons/word-x2.png");
+    background-position: 0 0;
+    background-size: cover;
+}
+.ico_doc::after, .ico_docx::after {
+    background-image: url("../img/icons/word-x2-hover.png");
+    background-position: 0 0;
+    background-size: cover;
+}
+.ico_xls::before, .ico_xlsx::before {
+    background-image: url("../img/icons/excel-x2.png");
+    background-position: 0 0;
+    background-size: cover;
+}
+.ico_xls::after, .ico_xlsx::after {
+    background-image: url("../img/icons/excel-x2-hover.png");
+    background-position: 0 0;
+    background-size: cover;
+}
+.ico_rar::before {
+    background-image: url("../img/icons/rar-x2.png");
+    background-position: 0 0;
+    background-size: cover;
+}
+.ico_rar::after {
+    background-image: url("../img/icons/rar-x2-hover.png");
+    background-position: 0 0;
+    background-size: cover;
+}
+.ico_zip::before {
+    background-image: url("../img/icons/zip-x2.png");
+    background-position: 0 0;
+    background-size: cover;
+}
+.ico_zip::after {
+    background-image: url("../img/icons/zip-x2-hover.png");
+    background-position: 0 0;
+    background-size: cover;
+}
+.ico_exe {
+    height: 28px;
+    width: 23px;
+}
+.ico_exe::before, .ico_exe::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.3s ease 0s;
+}
+.ico_exe::before {
+    background-image: url("../img/icons/exe-x2.png");
+    background-position: 0 0;
+    background-size: cover;
+    height: 28px;
+    width: 23px;
+}
+.ico_exe::after {
+    background-image: url("../img/icons/exe-x2-hover.png");
+    background-position: 0 0;
+    background-size: cover;
+    height: 28px;
+    opacity: 0;
+    width: 23px;
+}
 .product__brand {
 	display: inline-block;
 	margin-bottom: 10px;
@@ -210,4 +295,54 @@ img.slick-loading{
 }
 .promo + .promo {
 	margin-top: 30px;
+}
+.topic.ui {
+	height: auto;
+	margin: 0;
+}
+.components {
+	display: inline-block;
+	width: 100%;
+	margin: 22px 0 65px;
+}
+.components .components-item {
+	padding-right: 15%;
+	margin-bottom: 19px;
+}
+.compoments-link {
+	font-family: "museosanscyrl_700",Arial,Helvetica,sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	color: #000;
+	padding-left: 67px;
+	display: inline-block;
+	position: relative;
+	text-decoration: underline;
+	-webkit-transition: color 0.2s ease 0s;
+	transition: color 0.2s ease 0s;
+}
+.compoments-link:hover {
+	text-decoration: none;
+	color: #de1313;
+}
+.compoments-link .icon {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.compoments-link .icon.icon-exe {
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/icons/exe-big.jpg);
+	background-size: cover;
+}
+.compoments-link .icon.icon-update {
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/icons/icon-update.jpg);
+	background-size: cover;
+}
+.components .dcts .dcts__item {
+	width: 100%;
+	padding-right: 15%;
 }
