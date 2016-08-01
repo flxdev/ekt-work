@@ -15978,4 +15978,100 @@ $(document).ready( function() {
 		autoplay: true
 	});
 
+
+
+
+
+	$('.nav__block').each(function(){
+		var _ = $(this),
+			ul = _.find('[class^="ul-"]'),
+			ulnext = ul.find('li'),
+			timeout,
+			delay = 850;
+
+		_.on('mouseenter', function(){
+			clearTimeout(timeout);
+			_.addClass('hovered').find('> ul').show();
+		});
+
+		_.on('mouseleave', function(e){
+			var target = e.target,
+				rTarger = e.relatedTarget;
+
+			console.log(target, rTarger)
+			
+			timeout = setTimeout(function(){
+				_.removeClass('hovered');
+				ul.hide();
+				ulnext.removeClass('hovered');
+			},delay);
+		});
+
+		ulnext.on('mouseenter', function(){
+			clearTimeout(timeout);
+			$(this).addClass('hovered').find('> ul').show();
+		});
+
+		ulnext.on('mouseleave', function(e){
+			var target = e.target,
+				rTarger = e.relatedTarget;
+			if(($(target).hasClass('hovered') || $(rTarger).is('ul'))){
+				$(this).removeClass('hovered').children('ul').hide();
+			}
+		});
+
+		ul.on('mouseleave', function(e){
+			var target = e.target,
+				rTarger = e.relatedTarget;
+				if($(rTarger).is('li')) {
+					$(this).closest('li').removeClass('hovered')
+				}
+		});
+	});
+
+
+	function mainHeight(){
+		var wrap = $('.main.slide'),
+			wH = $(window).height(),
+			fH = $('.footer').height(),
+			hH = $('.header').height(),
+			padding = 15;
+
+		wrap.height(wH - fH - hH - (padding *2));
+	} mainHeight();
+
+	$(window).on('resize', function(){
+		mainHeight();
+	});
+
+	function move() {
+
+		$('.intro-wrap').addClass('visible');
+
+		var wrap = $('.slide-wrap'),
+			wrapParts = $('.slide-main-part');
+
+		wrapParts.on('mouseenter', function(e){
+			var target = $(e.target),
+				rTarget = $(e.relatedTarget),
+				intro = $(this).parents('.slide').find('.intro-wrap');
+
+			intro.removeClass('visible');
+
+			if($(this).hasClass('left')) {
+				$(this).addClass('move').siblings().removeClass('move');
+			} else {
+				$(this).addClass('move').siblings().removeClass('move');
+			}
+			// target.addClass('move')
+			// rTarget.removeClass('move');
+		});
+
+		wrap.on('mouseleave', function(){
+			$(this).children().removeClass('move');
+			$(this).parents('.slide').find('.intro-wrap').addClass('visible');
+		});
+
+	} move();
+
 });

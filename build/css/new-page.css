@@ -1,0 +1,171 @@
+body.is-home .main.slide {
+	padding: 0;
+	background-image: none;
+	height: 100%;
+	position: relative;
+}
+.video-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	transition: transform 0.3s ease-in-out;
+}
+.video-wrap::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #012f13;
+	opacity: 0.35;
+}
+.video-wrap video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-object-fit: cover;
+	object-fit: cover;
+}
+.intro-wrap {
+	position: absolute;
+	top: 30%;
+	width: 70%;
+	text-align: center;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	opacity: 0;
+}
+.intro-wrap.visible {
+	-webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+	opacity: 1;
+}
+.intro-title {
+	display: inline-block;
+	margin: 0 0 20px;
+	font-size: 36px;
+	font-family: "museosanscyrl_100", Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	letter-spacing: 2.5px;
+	color: #fff;
+	margin-bottom: 50px;
+}
+.slide-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.slide-wrap .slide-main-part {
+	width: 50%;
+	float: left;
+	height: 100%;
+	text-align: center;
+	position: relative;
+}
+.slide-wrap .slide-main-part .slide-text {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	-webkit-transform: translate(-50%);
+	-moz-transform: translate(-50%);
+	-o-transform: translate(-50%);
+	transform: translate(-50%);
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-transiton: transform 0.3s ease-in-out 0s;
+	transition: transform 0.3s ease-in-out 0s;
+}
+.slide-wrap .slide-main-part.move .slide-text {
+	-webkit-transform: translate(-50%, 200%);
+	-moz-transform: translate(-50%, 200%);
+	-o-transform: translate(-50%, 200%);
+	transform: translate(-50%, 200%);
+}
+.slide-wrap .slide-main-part .slide-text div {
+	font-family: "museosanscyrl_500", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	letter-spacing: 0.29px;
+}
+.slide-wrap .slide-main-part .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	opacity: 0;
+	background-color: #046a2b;
+}
+.slide-wrap .slide-main-part.move .overlay {
+	opacity: 0.77;
+}
+
+.navigation {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0, -40%);
+	-moz-transform: translate(0, -40%);
+	-o-transform: translate(0, -40%);
+	transform: translate(0, -40%);
+	opacity: 0;
+	-webkit-transiton: opacity 0.3s ease-in-out 0s, transform 0.3s ease-in-out 0s;
+	transition: opacity 0.3s ease-in-out 0s, transform 0.3s ease-in-out 0s;
+}
+.navigation .navigation-item {
+	display: block;
+	width: 100%;
+	font-family: "museosanscyrl_500", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	letter-spacing: 0.29px;
+	color: #fff;
+	padding: 10px 0;
+	-weblit-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+	position: relative;
+}
+.navigation .navigation-item::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	z-index: -1;
+	transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+	opacity: 0;
+	background-color: #fff;
+	transform: scale(1, 0);
+}
+
+.slide-wrap .slide-main-part.slide-main-part .navigation .navigation-item:hover {
+	color: #0e9b44;
+}
+.slide-wrap .slide-main-part.slide-main-part .navigation .navigation-item:hover::after {
+	transform: none;
+	opacity: 1;
+}
+.slide-wrap .slide-main-part.slide-main-part.move .navigation {
+	opacity: 1;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
