@@ -1164,3 +1164,45 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
+
+
+
+/**-----staff-----**/
+.staff__wrap .worker {
+    overflow: hidden;
+}
+.staff__wrap .worker::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease, bottom 0.3s ease;
+    transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+.staff__wrap .worker:hover::after {
+    opacity: 1;
+}
+.staff__wrap .worker .worker__info {
+    -webkit-transition: bottom 0.3s ease;
+    transition: bottom 0.3s ease;
+}.staff__wrap .worker:hover .worker__info {
+    bottom: 50%;
+    text-align: center;
+}
+.staff__wrap .worker .worker__info p {
+    font-family: 'museosanscyrl_300', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    max-width: 80%;
+    display: inline-block;
+    line-height: 22px;
+}
+.staff__wrap .worker:hover .worker__info p {
+    opacity: 1;
+}

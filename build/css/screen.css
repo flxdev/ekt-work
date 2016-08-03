@@ -12063,14 +12063,14 @@ img.slick-loading
 
 
 
-.topic
+#topic
 {
     height: 392px;
     margin: 45px 45px 0 44px;
 
     background-color: #fff;
 }
-.topic.inner
+#topic.inner
 {
     height: auto;
 }
@@ -12851,3 +12851,6 @@ a.fancybox-expand
 {
     box-sizing: initial;
 }
+
+
+
