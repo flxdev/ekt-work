@@ -16031,13 +16031,18 @@ $(document).ready( function() {
 
 
 	function mainHeight(){
+		var user = detect.parse(navigator.userAgent);
 		var wrap = $('.main.slide'),
-			wH = $(window).height(),
+			wH = user.browser.family === 'Edge' ? $(document).height() : $(window).height(),
 			fH = $('.footer').height(),
 			hH = $('.header').height(),
 			padding = 15;
-
-		wrap.height(wH - fH - hH - (padding *2));
+		if(user.browser.family === 'Edge' ) { $('body').addClass('edge')};
+		if(wH <= 560) {
+			wrap.height(560);
+		} else {
+			wrap.height(wH - fH - hH - (padding *2));
+		}
 	} mainHeight();
 
 	$(window).on('resize', function(){
@@ -16073,5 +16078,84 @@ $(document).ready( function() {
 		});
 
 	} move();
+
+	if(head.mobile) {
+		apImage();
+	}
+
+	function apImage() {
+		var wrap = $(".video-wrap");
+			source = wrap.find('video').attr('poster');
+
+		wrap.html('<img src="'+source+'" alt=""/>');
+	};
+
+	function resizeVideo(frame) {
+		if($('.video-wrap').find('video').length) {
+			var video = $('.video-wrap').find('video'),
+			    videoHeight = video.height();
+
+			if(frame < 840) {
+				video.height('auto');
+			} else {
+				video.height(frame);
+			}
+		} else {
+			var video = $('.video-wrap').find('img'),
+			    videoHeight = video.height();
+
+			if(frame < 840) {
+				video.height('auto');
+			} else {
+				video.height(frame);
+			}
+		}
+	} //resizeVideo();
+
+	$(window).on('resize load', function(){
+		var frame = $('.main.slide').height();
+		resizeVideo(frame);
+	});
+
+
+	function topQuestion(){
+		var area = $('.questions-form'),
+			btn = $('.btn-question');
+			
+		btn.each(function(){
+			var this_ = $(this);
+
+			this_.on("click", function(){
+				var _ = $(this),
+				    t = area.offset().top;
+
+				if(!area.hasClass('open')) {
+					if(_.hasClass('btn-question__top')) {
+						$('html, body').animate({
+							scrollTop: t
+						}, 800);
+
+						setTimeout(function() {
+							area.find('.questions-form__inner').slideDown(350);
+							area.addClass('open');
+						}, 350);
+
+					} else {
+						area.find('.questions-form__inner').slideDown(350);
+						area.addClass('open');
+						setTimeout(function(){
+							$('html, body').animate({
+								scrollTop: t
+							}, 800);
+						},250);
+					}
+				} else {
+					area.find('.questions-form__inner').slideUp(350);
+					area.removeClass('open')
+				}				
+			})
+		})
+	}
+	topQuestion();
 
 });
