@@ -27,6 +27,7 @@ code, pre {
     right: 0 !important;
     top: 0 !important;
 }
+.brand_fil {display:none;}
 /*[id^="bx_incl_area"] {display:inline-block;}*/
 .bx-context-toolbar-empty-area{min-width:12px;}
 .bx-core-window .section{display:table-row;}
@@ -1239,7 +1240,8 @@ img {
 .promo {
     margin: 0 12px;
     padding-left: 18px;
-    padding-right: 18px
+    padding-right: 18px;
+    max-width: 226px;
 }
 .promo + .promo {
     margin-top: 30px;
@@ -1946,12 +1948,33 @@ body.is-home.edge {
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .nav .nav__block:hover .nav__arr, .nav .nav__item:hover .nav__arr, .nav .nav__item.is-active .nav__arr, .nav .nav__item.is-active .nav__block:hover .nav__arr {
     background-image: url(../img/svg/right_circle.svg);
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mobile .nav .nav__arr {
+    background-image: url(../img/svg/down_circle.svg);
+    background-position: 50% 50%;
+    -webkit-background-size: 86%;
+    background-size: 86%;
+    background-repeat: no-repeat;
+}
+.mobile .nav .nav__block:hover .nav__arr, .mobile .nav .nav__item:hover .nav__arr, .mobile .nav .nav__item.is-active .nav__arr, .mobile .nav .nav__item.is-active .nav__block:hover .nav__arr {
+    background-image: url(../img/svg/right_circle.svg);
+    background-position: 50% 50%;
+    -webkit-background-size: 86%;
+    background-size: 86%;
+    background-repeat: no-repeat;
+}
+
+.mobile .out {
+    overflow: hidden;
 }
 
 .btn-question {
@@ -1967,4 +1990,63 @@ body.is-home.edge {
 .form__row .multiple-select {
     float: right;
     width: 70%;
+}
+
+.years .years__item:first-child a.is-active:after{
+    border-radius: 3px 0 0 3px;
+}
+
+.years .years__item:last-child a.is-active:after{
+    border-radius: 0 3px 3px 0;
+}
+
+.slider-for .box__popup {
+    position: relative;
+}
+.slider-for .box__popup::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(/bitrix/templates/ekt/img/icons/zoom_in.png);
+    background-size: cover;
+    top: 10px;
+    right: 10px;
+}
+.topic__gallery-inner {
+    white-space: nowrap;
+    font-size: 0;
+}
+.topic__gallery-item {
+    display: inline-block;
+}
+.main {
+    overflow: hidden;
+}
+.cover-ie {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/index-bg.png) no-repeat 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.cover-ie_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+.cover-ie_text p {
+    margin-top: 0;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.cover-ie_text .btn {
+    
 }
