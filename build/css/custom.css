@@ -2050,3 +2050,30 @@ body.is-home.edge {
 .cover-ie_text .btn {
     
 }
+.repair.repair-topper {
+    background-color: #fafafa;
+    padding: 20px 25px 10px 25px;
+    margin-bottom: 20px;
+}
+.repair.repair-topper table tr {
+    border-bottom: none;
+}
+.repair.repair-topper table tr:first-child:not(:last-child) {
+    border-bottom: 1px solid #dfdfdf;
+}
+.repair.repair-topper table td:first-child {
+    width: 6%;
+    min-width: 62px;
+}
+.repair.repair-topper table td:nth-child(2) {
+    width: 40%;
+    padding-right: 05px;
+}
+.repair.repair-topper table td:nth-child(3) {
+    width: 27%;
+    text-align: center;
+}
+.repair.repair-topper table td:nth-child(4) {
+    width: 27%;
+    text-align: center;
+}
