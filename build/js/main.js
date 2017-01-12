@@ -16030,24 +16030,24 @@ $(document).ready( function() {
 	});
 
 
-	function mainHeight(){
-		var user = detect.parse(navigator.userAgent);
-		var wrap = $('.main.slide'),
-			wH = user.browser.family === 'Edge' ? $(document).height() : $(window).height(),
-			fH = $('.footer').height(),
-			hH = $('.header').height(),
-			padding = 15;
-		if(user.browser.family === 'Edge' ) { $('body').addClass('edge')};
-		if(wH <= 560) {
-			wrap.height(560);
-		} else {
-			wrap.height(wH - fH - hH - (padding *2));
-		}
-	} mainHeight();
+	// function mainHeight(){
+	// 	var user = detect.parse(navigator.userAgent);
+	// 	var wrap = $('.main.slide'),
+	// 		wH = user.browser.family === 'Edge' ? $(document).height() : $(window).height(),
+	// 		fH = $('.footer').height(),
+	// 		hH = $('.header').height(),
+	// 		padding = 15;
+	// 	if(user.browser.family === 'Edge' ) { $('body').addClass('edge')};
+	// 	if(wH <= 560) {
+	// 		wrap.height(560);
+	// 	} else {
+	// 		wrap.height(wH - fH - hH - (padding *2));
+	// 	}
+	// } mainHeight();
 
-	$(window).on('resize', function(){
-		mainHeight();
-	});
+	// $(window).on('resize', function(){
+	// 	mainHeight();
+	// });
 
 	function move() {
 
