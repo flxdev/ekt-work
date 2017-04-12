@@ -713,5 +713,16 @@ $(document).ready( function() {
 		}
 	};
 	tech();
-
+	
+	function switchContacts () {
+		$('.js-contacts-city').each(function() {
+			$(this).find('li').on('click', function() {
+				var _active = $(this).data('city');
+				var _activeContent = $('.js-contacts-city-content').find("[data-city-content='" + _active + "']");
+				$(this).addClass('active').siblings().removeClass('active');
+				$(_activeContent).fadeIn(300).siblings().fadeOut(0)
+			});
+		});
+	} 
+	switchContacts();
 });

@@ -448,12 +448,13 @@ $(document).ready( function() {
 
 	if ($('#map-contact').length) {
 		ymaps.ready(initMapContact);
+		console.log('1111')
 	};
 
 	function initMapContact() {
 		var myMap = new ymaps.Map('map-contact', {
 				center: [57.9, 27.56667],
-				zoom: 16,
+				zoom: 10,
 				controls: []
 			}, {
 				searchControlProvider: 'yandex#search'

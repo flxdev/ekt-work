@@ -14348,15 +14348,38 @@ $(document).ready( function() {
 		ymaps.ready(initMapContact);
 	};
 
+	console.log($('.js-contacts-city').children().data('address-e'));
 	function initMapContact() {
 		var myMap = new ymaps.Map('map-contact', {
-				center: [57.9, 27.56667],
-				zoom: 16,
+				center: [$('.js-contacts-city').children().data('address-n'), $('.js-contacts-city').children().data('address-e')],
+				zoom: 10,
 				controls: []
 			}, {
 				searchControlProvider: 'yandex#search'
-			}),
-	        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+			});
+			// ,
+	        // myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+	        //     hintContent: 'Собственный значок метки'
+	        // }, {
+	        //     // Опции.
+	        //     // Необходимо указать данный тип макета.
+	        //     iconLayout: 'default#image',
+	        //     // Своё изображение иконки метки.
+	        //     iconImageHref: 'img/map-contact.png',
+	        //     // Размеры метки.
+	        //     iconImageSize: [34, 48],
+	        //     // Смещение левого верхнего угла иконки относительно
+	        //     // её "ножки" (точки привязки).
+	        //     iconImageOffset: [-3, -42]
+	        // });
+	    // console.log($('.js-contacts-city').children().length);
+	    // for(var i = 0; i < .length; i++) {
+
+	    // }
+
+	    $('.js-contacts-city').children().each( function() {
+	    	// console.log($(this).data('address-n'));
+	    	myPlacemark = new ymaps.Placemark([$(this).data('address-n'), $(this).data('address-e')], {
 	            hintContent: 'Собственный значок метки'
 	        }, {
 	            // Опции.
@@ -14370,8 +14393,10 @@ $(document).ready( function() {
 	            // её "ножки" (точки привязки).
 	            iconImageOffset: [-3, -42]
 	        });
+	        myMap.geoObjects.add(myPlacemark);
+	    });
 
-	    myMap.geoObjects.add(myPlacemark);
+	    // myMap.geoObjects.add(myPlacemark);
 
 		ZoomLayout = ymaps.templateLayoutFactory.createClass(
 			"<div class='zoom-buttons'>" +
@@ -14419,12 +14444,27 @@ $(document).ready( function() {
 		});
 
 		myMap.controls.add(zoomControl);
+		function clickGoto() {
+			var posN = $(this).data('address-n');
+			var posE = $(this).data('address-e');
+			console.log(posN, posE);
+			myMap.panTo([posN, posE], {
+				flying: 1
+			});
+			return false;
+		}
+
+		var option = $('.js-contacts-city li');
+		for (var i = 0, n = option.length; i < n; ++i) {
+			option[i].onclick = clickGoto;
+		}
 
 	};
 	
 	
 
 });
+
 ﻿/**
  * jQuery.Drag-On v2.8.2
  * @author Dark Heart aka PretorDH
@@ -15231,11 +15271,12 @@ $(document).ready( function() {
 		$(".js-tab").each(function(){
 			var tab_link = $(this).find("a"),
 				tab_item = $(this).find("li"),
-				index = tab_link.attr("href"),
+				index = tab_link.data("link"),
 				parents = $(this).parents(".js-tab-group"),
 				tab_cont = parents.find(".js-tab-cont");
+				console.log(index);
 			tab_link.on("click", function() {
-				var index = $(this).attr("href");
+				var index = $(this).data("link");
 				$('.js-tab-item').removeClass("is-active");
 				$(this).parent().addClass("is-active");
 				tab_cont.fadeOut(0);

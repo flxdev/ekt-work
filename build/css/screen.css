@@ -11633,10 +11633,9 @@ textarea.textarea.valid
 }.map.map_contact
 {
     position: relative;
-
     width: 100% !important;
-    height: 324px;
-    margin: 50px 0 34px;
+    height: 675px;
+    margin: 0px 0 34px;
 }.map.map_contact:before
 {
     position: absolute;
